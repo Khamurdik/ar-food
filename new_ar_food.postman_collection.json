@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "01dc5a5b-a30d-4a99-9431-500372987070",
+		"name": "new_ar_food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authorization",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"login\":\"forBodya\",\n\t\"password\":\"admin\"\n}"
+				},
+				"url": {
+					"raw": "https://us-central1-flowing-precept-152810.cloudfunctions.net/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"us-central1-flowing-precept-152810",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ресторан",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://us-central1-flowing-precept-152810.cloudfunctions.net/api/restaurants/myself/",
+					"protocol": "https",
+					"host": [
+						"us-central1-flowing-precept-152810",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"restaurants",
+						"myself",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Страви ресторану",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://us-central1-flowing-precept-152810.cloudfunctions.net/api/restaurants/myself/meals/",
+					"protocol": "https",
+					"host": [
+						"us-central1-flowing-precept-152810",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"restaurants",
+						"myself",
+						"meals",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "всі типи страв у ресторані",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://us-central1-flowing-precept-152810.cloudfunctions.net/api/restaurants/myself/types/",
+					"protocol": "https",
+					"host": [
+						"us-central1-flowing-precept-152810",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"restaurants",
+						"myself",
+						"types",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Взагалі всі типи страв",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://us-central1-flowing-precept-152810.cloudfunctions.net/api/types/",
+					"protocol": "https",
+					"host": [
+						"us-central1-flowing-precept-152810",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"types",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
